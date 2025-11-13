@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Air Horn!</title>
+    <style>
+      .container {
+        position: relative;
+        display: inline-block;
+      }
+
+      .gif {
+        display: block;
+        /* Removes weird spacing */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Click Me</h1>
+    
+    <!--<div class="container" onclick="document.getElementById('sfx').play()">-->
+    <div class="container" onclick="const a=document.getElementById('sfx'); a.currentTime=0; a.play();">    
+    
+      <!-- gif -->
+      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2QxZmE2dzduM3BjcTJ6YTBvdXdqZzJnMGQ2anBtbzZ3bHVub2dzdSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/S7HYSE8scLObm2juSl/giphy.gif">
+    </div>
+    
+    <!-- audio -->
+    <audio id="sfx" src="airhornSound.mp3"></audio>
+  </body>
+</html>
